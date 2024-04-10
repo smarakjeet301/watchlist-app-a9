@@ -1,0 +1,2 @@
+export const REGISTER_USER = 'REGISTER_USER';
+export const CHECK_USER_EMAIL = 'CHECK_USER_EMAIL';
