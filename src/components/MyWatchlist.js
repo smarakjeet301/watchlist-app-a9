@@ -7,7 +7,7 @@ function MyWatchlist(props) {
 
     const oldData = JSON.parse(localStorage.getItem('userData'))
 
-    oldData.push(...props.watchlists.watchlist.watchlists)
+    // oldData.push(...props.watchlists.watchlist.watchlists)
 
     return (
         <div>
