@@ -12,12 +12,6 @@ const userRegisterReducer = (state = initialState, action) => {
             if (!state.userEmail.includes(userEmail)) {
                 const updatedEmail = { ...state.userEmail, userEmail };
                 localStorage.setItem('userEmail', JSON.stringify(updatedEmail));
-                localStorage.setItem('userData', JSON.stringify([
-                    {
-                        userEmail,
-                        watchlists: []
-                    }
-                ]));
                 return {
                     ...state,
                     userEmail: updatedEmail,

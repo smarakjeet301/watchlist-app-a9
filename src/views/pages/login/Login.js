@@ -18,6 +18,7 @@ function Login() {
             if (userEmail.includes(email)) {
                 navigate('/');
                 toast.success(appConfig.messages.LOGIN_SUCCESS)
+                localStorage.setItem("currentUser", userEmail)
             } else {
                 toast.error(appConfig.messages.LOGIN_FAILED)
                 navigate('/register');
