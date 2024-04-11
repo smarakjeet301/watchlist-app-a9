@@ -2,12 +2,8 @@ import React from 'react'
 import { connect } from "react-redux";
 
 function MyWatchlist(props) {
-    const data = props.watchlists.watchlist.watchlists.length > 0 ? props.watchlists.watchlist.watchlists : JSON.parse(localStorage.getItem('userData'))
+    const data = props.watchlists.watchlist.watchlists.length > 0 ? props.watchlists.watchlist.watchlists : []
     localStorage.setItem('userData', JSON.stringify(data));
-
-    const oldData = JSON.parse(localStorage.getItem('userData'))
-
-    // oldData.push(...props.watchlists.watchlist.watchlists)
 
     return (
         <div>
